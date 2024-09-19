@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ea2727; /* Light background color for the whole page */
+}
+
+header {
+    background-color: #b86d64; /* Deep blue color for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+}
+
+#welcome-text {
+    height: 35px;
+    width: 100%;
+    background: #cf302d;
+    line-height: 35px;
+    padding: 0 20px 0 100px;
+    box-sizing: border-box;
+    word-spacing: 10px;
+}
+
+#welcome-text h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff; /* White text color for better contrast */
+}
+
+#welcome-text, p {
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+    color: #e0e0e0; /* Light grey for secondary text */
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(252, 94, 94); /* Dark background for menu section */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: lighter;
+    color: black;
+}
+
+#search {
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #cf302d; /* Blue border color for search bar */
+    background-color: #fff; /* White background for the search bar */
+    width: 100%;
+    max-width: 400px;
+    font-size: 15px;
+}
+
+main {
+    padding: 20px;
+    background-color: #db7d6f; /* White background for the main content area */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    background-color: #e9cbcb; /* Light grey background for book boxes */
+    border: 1px solid #c9250f;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+.book p {
+    font-size: 12px;
+    color: #555;
+    margin: 5px 0;
+}
+
+footer {
+    background: #cf302d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header, #menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    #search {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .book {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #welcome-text h1 {
+        font-size: 28px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+}
